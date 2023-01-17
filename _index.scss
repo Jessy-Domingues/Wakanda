@@ -1,0 +1,345 @@
+@import 'variables';
+@import 'mixins';
+
+.first_section{
+    width:90%;
+    margin: 5% 5%;
+    @media only screen and (max-width: 992px){
+        flex-direction: column;
+        margin-bottom: 15%;;
+    }
+    h2{ width: 90%;
+        @include titre;
+        
+    }
+    p{
+        width: 90%;
+        color: $third_2;
+    
+    }
+    .aboutbtn{
+        width: 22vh !important;
+        @media only screen and (max-width: 992px){
+            width: 22vw !important;
+        }
+        @media only screen and (max-width: 768px){
+            width: 33vw !important;
+        }
+        @media only screen and (max-width: 425px){
+            width: 50vw !important;
+        }
+        a{
+            margin-top: 1em;
+            color: $third_2;
+            background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth);
+            &:hover{
+                background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth,rgba(75, 81, 161, 0.6),rgba(75, 81, 161, 0.807));
+                background-size: 600%;
+                animation: anime 4s linear;
+            
+            @keyframes anime{
+                0%{
+                    background-position: 0% 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 100% 50%;
+                }
+            }
+              
+        }::after{
+            background: rgba(75, 81, 161, 0.807);
+        }
+    }
+}
+    .left{
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 992px){
+            align-items: center;
+            text-align: center;
+            margin-bottom: 7%;
+        }
+    }
+    .right{
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 992px){
+            justify-content: center;
+        }
+    }
+
+
+
+    .right_1{
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    .tech{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .pour{
+            width:12%;
+            text-align: end;
+        }
+    }
+}
+    .right_2{
+        width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    .secu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+        .pour_2{
+        width:12%;
+        text-align: end;
+    }
+}
+}
+.right_3{
+    width: 75%;
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+    .quali{
+width: 100%;
+display: flex;
+justify-content: space-around;
+        .pour_3{
+    width:12%;
+    text-align: end;
+}
+}
+}
+.right_4{
+width: 75%;
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+    .hume{
+width: 100%;
+display: flex;
+justify-content: space-around;
+        .pour_4{
+    width:12%;
+    text-align: end;
+}
+}
+}
+}
+
+// Fin premiere section
+// Début seconde section
+.scd_section{
+border-top: 0.5px solid $third;
+@media only screen and (max-width: 768px){
+    margin: 10% 0%; 
+}
+
+
+.scd_col{
+    @media only screen and (max-width: 992px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.scd_lft_bloc{
+display: flex;
+align-items: center;
+
+h2{
+    width:90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    @include titre;
+    @media only screen and (max-width: 992px){
+        text-align:center;
+        margin-bottom: 10%;
+    }
+    @media only screen and (max-width: 768px){
+        margin-bottom: 0%;
+    }
+}
+}
+.Tchalla{
+margin: 0%;
+}
+.wp-container-8{
+gap: 0%;
+margin-bottom: 0%;
+}
+}
+// Fin deuxieme section
+// Début troisieme section
+
+.thd_section{
+border-bottom: 0.5px solid $third;
+@media only screen and (max-width: 768px){
+    padding: 10% 0%; 
+}
+.thd_col{
+    gap: 0%;
+    margin-bottom: 0%;
+    @media only screen and (max-width: 992px){
+        flex-direction: column;
+    }
+}
+.shuri{
+    margin: 0%;
+    img{
+        max-height: 460px !important;
+        object-fit: cover;
+        object-position: 0% 30%;
+        @media only screen and (max-width: 992px){
+            object-position: 0% 20%;
+        }
+    }
+}
+.thd_right_bloc{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (max-width: 992px){
+        margin-bottom: 4%;
+        align-items: center;
+        width: 100%;
+    }
+    @media only screen and (max-width: 768px){
+        margin-bottom: 0%;
+    }
+    
+h2{
+    
+    margin:0% 10%;
+    @include titre;
+    text-align: right;
+    @media only screen and (max-width: 992px){
+        margin:5% 10%;
+        text-align: center;
+    }
+}
+p{
+    
+    margin:0% 10%;
+    @include para;
+    text-align: right;
+    @media only screen and (max-width: 992px){
+        margin-bottom: 3%;
+        text-align: center;
+    }
+}
+.btn_class{
+    justify-content: end;
+.vibrabtn{
+    width: 22vh !important;
+    margin:0% 10%;
+    display: flex;
+    justify-content: center;
+        @media only screen and (max-width: 992px){
+            width: 22vw !important;
+        }
+        @media only screen and (max-width: 768px){
+            width: 33vw !important;
+        }
+        @media only screen and (max-width: 425px){
+            width: 50vw !important;
+        }
+    a{
+        margin-top: 1em;
+        color: $third_2;
+        background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth);
+        &:hover{
+            background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth,rgba(75, 81, 161, 0.6),rgba(75, 81, 161, 0.807));
+            background-size: 600%;
+            animation: anime 4s linear;
+        
+        @keyframes anime{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 100% 50%;
+            }
+        }
+          
+    }::after{
+        background: rgba(75, 81, 161, 0.807);
+    }
+    }
+}
+}
+}
+}
+
+// Fin troisieme section
+// Début quatrieme section
+
+.fth_section{
+margin: 3% 0%;
+@media only screen and (max-width: 768px){
+    margin: 12% 5%; 
+}
+div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    margin-top: 0%;
+    @include titre;
+    @media only screen and (max-width: 768px){
+        
+        text-align: center;
+    }
+}
+p{
+    text-align: center;
+    @include para;
+}
+.contactbtn{
+a{
+    margin-top: 1em;
+        color: $third_2;
+        background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth);
+        &:hover{
+            background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth,rgba(75, 81, 161, 0.6),rgba(75, 81, 161, 0.807));
+            background-size: 600%;
+            animation: anime 4s linear;
+        
+        @keyframes anime{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 100% 50%;
+            }
+        }
+          
+    }::after{
+        background: rgba(75, 81, 161, 0.807);
+    }
+}
+}
+}
+
+
+

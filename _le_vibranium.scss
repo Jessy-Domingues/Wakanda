@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+.page-id-16{
+    .is-layout-flex{
+        justify-content: center;
+    }
+.vib_section{
+    display: flex;
+    align-items: center !important;
+    margin: 3%;
+    @media only screen and (max-width: 1200px){
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    h2{
+        @include titre; 
+        @media only screen and (max-width: 992px){
+            text-align: center;
+        }
+     }
+     p{
+         @include para;
+         width: 75%;
+         @media only screen and (max-width: 1200px){
+            width: 100%;
+        }
+        @media only screen and (max-width: 992px){
+            text-align: center;
+        }
+     }
+     .vibcol{
+        @media only screen and (max-width: 768px){
+            margin-bottom: 0%;
+            display: flex;
+            justify-content: center;
+        }
+        figure{
+            @media only screen and (max-width: 768px){
+                margin-bottom: 3%;
+            }
+        }
+     }
+}
+
+
+
+}

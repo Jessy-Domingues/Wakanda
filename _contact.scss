@@ -1,0 +1,196 @@
+@import 'variables';
+@import 'mixins';
+
+.page-id-18{
+    
+    .contact_section{
+        min-height: 40vh;
+        align-items: center !important;
+        border-bottom: 0.5px solid $third;
+        @media only screen and (max-width: 992px){
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        h2{
+            margin-top: 0%;
+            @include titre;
+            @media only screen and (max-width: 992px){
+                text-align: center;
+            }
+        }
+        p{
+            @include para;
+            @media only screen and (max-width: 992px){
+                text-align: center;
+            }
+        }
+    }
+.cont_left{
+    width: 75%;
+    margin: auto;
+}
+.cont_right{
+    width:90%;
+    height: 100%;
+    margin: auto;
+
+    form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .ctc_btn{
+            width: 96%;
+            justify-content: flex-end;
+
+            .wp-block-button{
+                width: 22vh;
+            
+            a{
+                margin-top: 1em;
+                color: $third_2;
+                background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth);
+                &:hover{
+                    background: linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth,rgba(75, 81, 161, 0.6),rgba(75, 81, 161, 0.807));
+                    background-size: 600%;
+                    animation: anime 4s linear;
+                
+                @keyframes anime{
+                    0%{
+                        background-position: 0% 50%;
+                    }
+                    50%{
+                        background-position: 100% 50%;
+                    }
+                    100%{
+                        background-position: 100% 50%;
+                    }
+                }
+        }
+        }
+    }
+    }
+}
+    
+    .part_one{
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px){
+            flex-direction: column;
+        }
+
+        .name{
+            width: 50%;
+            @media only screen and (max-width: 768px){
+                width: 70%;
+            }
+            @media only screen and (max-width: 425px){
+                width: 100%;
+            }
+
+            .input-name{
+                width: 90%;
+                background-color: transparent;
+                text-align: start;
+                padding: 0.5em;
+                border: none;
+                color: $third_2;
+                border-bottom: 0.5px solid $third;
+                font-family:'DM Sans';
+            }
+        }
+        .e-mail{
+            width: 50%;
+            @media only screen and (max-width: 768px){
+                margin-top: 5%;
+                width: 70%;
+            }
+            @media only screen and (max-width: 425px){
+                width: 100%;
+            }
+
+            .input-mail{
+                width: 90%;
+                background-color: transparent;
+                text-align: start;
+                padding: 0.5em;
+                border: none;
+                color: $third_2;
+                border-bottom: 0.5px solid $third;
+                font-family:'DM Sans';
+                
+            }
+        }
+    }
+    .text{
+        margin-top: 3%;
+        textarea{
+            box-sizing: border-box;
+            max-width:97%;
+            background-color: transparent;
+                padding: 0.5em;
+                border: none;
+                color: $third_2;
+                border-bottom: 0.5px solid $third;
+                resize: none;
+                width: 86em;
+                height: 5em;
+                @media only screen and (max-width: 992px){
+                    width: 80vw;
+                }
+        &::placeholder{
+            position:absolute;
+            bottom: 10px;
+            font-family:'DM Sans';
+        }
+        }
+    }
+}
+.ctc_scd_section{
+    margin:5% auto;
+    @media only screen and (max-width: 768px){
+        margin:10% auto; 
+    }
+    h2{
+        margin-top: 0%;
+        @include titre;
+    }
+    p{
+        @include para;
+    }
+}
+.scdttl{
+    text-align: center;
+}
+.ctc_news{
+    width: 60%;
+    margin: auto;
+    display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 0.5px solid $third;
+
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            i{
+                background: transparent;
+                color: $third_2;
+            }
+        }
+
+    .input-news {
+        background-color: transparent;
+        width: 100%;
+        text-align: start;
+        padding: 0.5em;
+        border: none;
+        color: $third_2;
+        
+    }
+}
+}

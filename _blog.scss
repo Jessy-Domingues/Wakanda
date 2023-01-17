@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+.page-id-24{
+    #blog{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5%;
+
+        h2{
+            @include titre;
+            text-align:center;
+        }
+        h3{
+            @include titre;
+            @media only screen and (max-width: 992px){
+                margin-bottom: 0%;
+            }
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                &:hover{
+                    text-decoration: underline;
+                    text-decoration-color: $fourth;
+                }
+                &:visited,&::before{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        p{
+            @include para;
+        }
+        #allarticles{
+            li{
+                @media only screen and (max-width: 768px){
+                    margin-bottom: 15%;
+                }
+                @media only screen and (max-width: 425px){
+                    margin-bottom: 20%;
+                }
+                
+            }
+        }
+        nav{
+            a{
+                color: #FFFFFF;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    text-decoration-color: $fourth;
+                    
+                }
+                &:visited{
+                    color: #FFFFFF;
+                }  
+            }
+            .current{
+                color:$third;
+            }
+        }
+}
+}

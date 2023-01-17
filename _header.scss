@@ -1,0 +1,73 @@
+@import'variables';
+.postid-207{
+    header{
+        height: 90vh;
+        background-size: cover;
+        background-position: 10% 50%;
+    }
+}
+
+.page-id-16{
+    header{
+        height: 90vh;
+        background-size: cover;
+        background-position: 25% 50%;
+        
+    }
+}
+header{
+    height: 90vh;
+    background-size: cover;
+    background-position: 62% 50%;
+    
+
+    
+    
+    .mepnav{
+        width:84%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .rs{
+            a{
+            text-decoration: none;
+            color: #FFFFFF;
+
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                color: #ffffffa7;
+            }
+            }
+        }
+        span{
+            background:linear-gradient(133deg,rgba(75, 81, 161, 0.807),$fourth);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover{
+                color: linear-gradient(313deg,rgba(75, 81, 161, 0.807),$fourth,rgba(75, 81, 161, 0.807));
+                background-size: 300%;
+                animation: anime 2s linear;
+            
+            @keyframes anime{
+                0%{
+                    background-position: 0% 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 100% 50%;
+                }
+            }
+              
+        }
+        }
+        p{
+            color: rgba($color: #FFFFFF, $alpha: 0.75);
+        }
+    }
+    
+}

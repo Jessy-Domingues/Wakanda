@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
+#actu{
+margin: 5% auto;
+}
+.single-format-standard{
+article{
+    width: 70%;
+    margin: auto;
+    @media only screen and (max-width: 992px){
+        width: 80%;
+    }
+    @media only screen and (max-width: 768px){
+        width: 90%;
+    }
+    @media only screen and (max-width: 425px){
+        margin-bottom: 10%;
+    }
+
+    @include para;
+
+    .titre{
+        margin-left: 5%;
+        margin-bottom: 2%;
+        @include titre;
+    }
+    .contenu{
+        background-color: #0B1233;
+        padding: 0.5em 1em 1em 1em;
+    }
+}
+}

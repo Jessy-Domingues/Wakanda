@@ -1,0 +1,101 @@
+@import 'variables';
+@import 'mixins';
+
+.page-id-14{
+    .about_first_section{
+        margin: 5% 5%;
+        justify-content: space-between;
+        @media only screen and (max-width: 992px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+.fst_bloc_left{
+    
+
+    h2{
+        @include titre;
+        @media only screen and (max-width: 992px){
+            text-align: center;
+        }
+        
+    }
+    p{
+        @include para;
+        @media only screen and (max-width: 992px){
+            text-align: center;
+        }
+    }
+    
+}
+.fst_bloc_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .map{
+        figcaption{
+            text-align: center;
+            color: $third_2;
+        }
+    }
+
+    .flag{
+        width: 70%;
+        height: auto;
+        
+        figcaption{
+            text-align: center;
+            color: $third_2;
+        }
+    }
+}
+.scde_section{
+        
+        border-top: 0.5px solid $third;
+        
+        .scd_bloc{
+            margin: 3% 5%;
+            justify-content: space-between;
+            @media only screen and (max-width: 992px){
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+    .scd_bloc_right{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        h2{
+            @include titre;
+            text-align: end;
+            @media only screen and (max-width: 992px){
+                text-align: center;
+            }
+        }
+        p{
+            @include para;
+            text-align: end;
+            @media only screen and (max-width: 992px){
+            text-align: center;
+        }
+        }
+    }
+    .scd_bloc_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .shield{
+            width: 80%;
+            @media only screen and (max-width: 992px){
+                width: 100%;
+            }
+        }
+    }
+}
+}
+}

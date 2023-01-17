@@ -1,0 +1,103 @@
+/* Theme Name: wakanda blog
+Description: Thème personnalisé pour le site du Blog
+Version: 0.1
+Author: Jes4960
+*/
+@import 'header';
+@import 'index';
+@import 'a_propos';
+@import 'blog';
+@import 'single';
+@import 'le_vibranium';
+@import 'contact';
+@import 'pdc';
+@import 'ml';
+@import 'mixins';
+@import 'variables';
+@import 'progressbar';
+@import 'totop';
+@import 'footer';
+
+
+// Menu burger
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $third;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    nav{
+        ul{
+            li{
+                display: flex;
+            }
+        }
+    }
+    svg{
+        position: absolute;
+        top: -40%;
+        right: 59%;
+        @media only screen and (max-width: 768px){
+          top: -55%;
+          right: 52%;
+        }
+    }
+  }
+  
+  .overlay a {
+    padding: 0.3em;
+    text-decoration: none;
+    font-size: 3em;
+    color: $third_2;
+    display: block;
+    transition: 0.3s;
+    @media only screen and (max-width: 768px){
+      font-size: 2em;
+    }
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+// Fin menu burger
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-color: $one;
+    font-family: 'DM Sans';
+    margin: 0%;
+    
+}

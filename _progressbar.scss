@@ -1,0 +1,89 @@
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 3px;
+    width: 100%;
+  }
+  
+  .progress-value{
+    animation: load1 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: #fff;
+    height: 1px;
+    width: 0;
+    
+  
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 99%; }
+  }
+}
+.progress_2 {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 3px;
+    width: 100%;
+  }
+  
+  .progress-value_2 {
+    animation: load2 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: #fff;
+    height: 1px;
+    width: 0;
+  
+  @keyframes load2 {
+    0% { width: 0; }
+    100% { width: 97%; }
+  }
+}
+.progress_3 {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 3px;
+    width: 100%;
+  }
+  
+  .progress-value_3 {
+    animation: load3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: #fff;
+    height: 1px;
+    width: 0;
+  
+  @keyframes load3 {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+}
+.progress_4 {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 3px;
+    width: 100%;
+  }
+  
+  .progress-value_4 {
+    animation: load4 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: #fff;
+    height: 1px;
+    width: 0;
+  
+  @keyframes load4 {
+    0% { width: 0; }
+    100% { width: 95%; }
+  }
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+.page-id-3{
+    .color{
+        background: linear-gradient(to bottom,$one,rgba(36, 11, 51, 1),rgba(178, 94, 218, 0.5),rgba(179, 94, 218, 0.3),$one);
+
+    }
+    header{
+    height: auto;
+    
+    }
+    .main_bloc{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 4%;
+    
+    h2{
+        @include titre;
+        text-align: center;
+    }
+    p{
+        @include para;
+    }
+}
+}
