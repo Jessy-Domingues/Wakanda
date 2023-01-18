@@ -42,6 +42,7 @@ add_image_size( 'blogpage_thumb', 300, 300, false );
 add_image_size( 'singleposthumbnail', 750, 750, false );
 add_image_size( 'singleposthumbnail2', 750, 750, true );// L'image sera tronquée exactement à la dimension indiquée
 add_image_size( 'couv', 1536, 1536, false );
+add_image_size( 'small_home', 150,150, false);
 }
 
 

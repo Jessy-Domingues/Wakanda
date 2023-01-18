@@ -1297,6 +1297,58 @@ footer .main .news {
   }
 }
 
+.error404 {
+  background-image: url(https://jessy-domingues.fr/wp-content/uploads/2023/01/404-page.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.error404 header {
+  display: none;
+}
+.error404 h1 {
+  font-family: "Cinzel";
+  font-weight: 400;
+  font-size: 2.2em;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3em;
+  background-color: rgba(255, 255, 255, 0.0470588235);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1% 0%;
+}
+.error404 .top404 {
+  height: 50vh;
+}
+.error404 .home {
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.error404 .home nav {
+  width: 15%;
+  margin-bottom: 2%;
+}
+.error404 .home nav li {
+  list-style: none;
+}
+.error404 .home nav li a {
+  color: rgb(158, 160, 179);
+  text-decoration: none;
+  margin: 5%;
+}
+.error404 .home nav li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgb(143, 211, 255);
+          text-decoration-color: rgb(143, 211, 255);
+}
+
 .overlay {
   height: 0%;
   width: 100%;
