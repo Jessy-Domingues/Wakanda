@@ -1302,6 +1302,7 @@ footer .main .news {
   height: 100vh;
   background-size: cover;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1316,24 +1317,38 @@ footer .main .news {
   color: #FFFFFF;
   text-align: center;
   font-size: 3em;
-  background-color: rgba(255, 255, 255, 0.0470588235);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 1% 0%;
 }
+.error404 h2 {
+  color: rgb(158, 160, 179);
+  text-align: center;
+}
 .error404 .top404 {
-  height: 50vh;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.0470588235);
 }
 .error404 .home {
-  height: 50vh;
+  height: 80vh;
   display: flex;
   justify-content: end;
   align-items: flex-end;
 }
 .error404 .home nav {
-  width: 15%;
+  width: 15vw;
   margin-bottom: 2%;
+}
+@media only screen and (max-width: 992px) {
+  .error404 .home nav {
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .error404 .home nav {
+    width: 40vw;
+  }
 }
 .error404 .home nav li {
   list-style: none;

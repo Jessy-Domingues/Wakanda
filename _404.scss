@@ -5,6 +5,7 @@
     height: 100vh;
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -17,21 +18,32 @@
         @include titre;
         text-align: center;
         font-size: 3em;
-        background-color: #ffffff0c;
         height: fit-content;
         margin: 1% 0%;
     }
+    h2{
+        @include para;
+        text-align: center;
+        
+    }
     .top404{
-    height: 50vh;
+    height: 20vh;
+    background-color: #ffffff0c;
     }
     .home{
-        height: 50vh;
+        height: 80vh;
         display: flex;
         justify-content: end;
         align-items: flex-end;
         nav{
-        width: 15%;
+        width: 15vw;
         margin-bottom: 2%;
+        @media only screen and (max-width: 992px){
+            width: 25vw;
+        }
+        @media only screen and (max-width: 450px){
+            width: 40vw;
+        }
         
         li{
             

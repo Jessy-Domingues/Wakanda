@@ -15,7 +15,8 @@
     <!-- Template Name: 404 -->
 </header>
 <div class='top404'>
-    <h1>Erreur 404 Page perdue</h1>
+    <h1>Erreur 404</h1>
+    <h2>La page que vous cherchez n'existe pas</h2>
 </div>
 <div class='home'>
 <?php
